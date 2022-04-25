@@ -1,0 +1,53 @@
+.Header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-color: var(--main-color-bg);
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 6vw;
+  display: block;
+  background-color: var(--main-color-text);
+  width: 40px;
+  height: 20px;
+  border-radius: 60%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  outline: none;
+  cursor: pointer;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: var(--bullet-position);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: var(--main-color);
+  width: 40%;
+  height: 70%;
+  border-radius: 60%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.button:hover::before {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--main-color)), color-stop(50%, var(--main-color-text)));
+  background-image: linear-gradient(to right, var(--main-color) 50%, var(--main-color-text) 50%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}

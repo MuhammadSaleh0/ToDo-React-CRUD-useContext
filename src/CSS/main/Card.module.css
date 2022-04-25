@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  scroll-behavior: smooth;
+}
+
+* h1,
+* h2,
+* h3,
+* h4,
+* h5,
+* h6 {
+  margin: 0;
+  padding: 0;
+}
+
+* ul {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+:root {
+  --main-color: hsl(0, 0%, 99%);
+  --main-color-text: hsl(0, 0%, 20%);
+  --main-color-bg: hsl(0, 0%, 79%);
+  --main-color-li: linear-gradient(to right, hsl(202, 49%, 58%), hsl(187, 77%, 30%));
+  --shadow: 1px 1px 1px hsl(187, 77%, 80%);
+  --clr-outline: hsl(202, 79%, 68%);
+  --bullet-position: 2px;
+}
+
+:root .Card-dark {
+  --main-color: hsl(0, 0%, 0%);
+  --main-color-text: white;
+  --main-color-bg: hsl(0, 0%, 20%);
+  --main-color-li: linear-gradient(to right, hsl(202, 49%, 48%), hsl(187, 77%, 19%));
+  --shadow: 1px 1px 1px hsl(187, 77%, 8%);
+  --bullet-position: 53%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.Card {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--main-color);
+  color: var(--main-color-text);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/*# sourceMappingURL=Card.module.css.map */

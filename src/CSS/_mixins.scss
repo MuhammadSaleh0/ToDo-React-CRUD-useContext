@@ -1,0 +1,36 @@
+@mixin breakepoints($screensize) {
+    @if $screensize==mobile {
+        @media (max-width:575px) {
+            @content;
+        }
+    }
+
+    @else if $screensize==medium {
+        @media (max-width:991px) {
+            @content;
+        }
+    }
+
+    @else if $screensize==large {
+        @media (min-width:992px) {
+            @content;
+        }
+    }
+}
+
+@mixin input-props {
+    text-align: start;
+    padding: 0 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 2.2rem;
+    font-size: 1.2rem;
+    color: blue;
+    letter-spacing: 1px;
+    transition: .5s;
+    caret-color: blue;
+    text-transform: capitalize;
+    // box-shadow: 1px 1px 4px hsla(0, 0%, 52%, 0.842);
+    @content;
+}

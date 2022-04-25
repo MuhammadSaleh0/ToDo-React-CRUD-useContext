@@ -1,0 +1,11 @@
+h1 {
+  font-size: 3.1rem;
+}
+
+h1 span {
+  display: inline-block;
+  color: #6666ca;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=TodoText.module.css.map */

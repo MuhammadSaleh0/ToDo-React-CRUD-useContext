@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,EAAE,CAAC;EACC,SAAS,EAAE,MAAM;CAQpB;;AATD,AAII,EAJF,CAIE,IAAI,CAAC;EACD,OAAO,EAAE,YAAY;EACrB,KAAK,EAAE,OAAkB;EACzB,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "../TodoText.module.scss"
+    ],
+    "names": [],
+    "file": "TodoText.module.css"
+}

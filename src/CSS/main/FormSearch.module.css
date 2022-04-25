@@ -1,0 +1,39 @@
+.form-search {
+  margin: 0 .5rem 1.5rem;
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.form-search:hover input, .form-search:focus input {
+  outline: 5px solid #6dbfee;
+}
+
+.form-search label {
+  height: 25px;
+  margin: 0 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.form-search input {
+  border: 0;
+  outline: 2px solid var(--clr-outline);
+  height: .7rem;
+  padding: .7rem;
+  padding-left: 2.2rem;
+  font-size: 1rem;
+  color: #134562;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  caret-color: #6dbfee;
+}
+/*# sourceMappingURL=FormSearch.module.css.map */

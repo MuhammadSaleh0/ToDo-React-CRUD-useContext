@@ -1,0 +1,65 @@
+@import "./mixins";
+
+.form {
+    margin-top: 3.6rem;
+    text-align: center;
+
+    .input-control {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .lable {
+        text-align: start;
+        margin-left: 1rem;
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        display: block;
+        color: var(--main-color-text);
+        transition: 0.5s;
+        width: fit-content;
+    }
+
+    input {
+        @include input-props();
+        width: 95%;
+        margin: 0 auto;
+        height: 3rem;
+        border: 1px solid black;
+        border-radius: 50px;
+
+
+        @include breakepoints(mobile) {
+            width: 80%;
+        }
+
+        &:hover,
+        &:focus {
+            border: 0;
+            outline: 5px solid var(--clr-outline);
+        }
+    }
+
+    button {
+        margin: 1.3rem auto;
+        border: 0;
+        outline: none;
+        padding: 10px 15px;
+        font-size: 1rem;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        background-color: hsl(202, 79%, 60%);
+        color: var(--main-color-text);
+        transition: .5s;
+        cursor: pointer;
+        display: block;
+
+        &:hover {
+            transition: .5s;
+            letter-spacing: 2px;
+            background-color: hsl(202, 79%, 47%);
+        }
+    }
+}

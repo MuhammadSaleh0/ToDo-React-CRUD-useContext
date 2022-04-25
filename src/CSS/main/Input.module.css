@@ -1,0 +1,81 @@
+.form {
+  margin-top: 3.6rem;
+  text-align: center;
+}
+
+.form .input-control {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.form .lable {
+  text-align: start;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  display: block;
+  color: var(--main-color-text);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.form input {
+  text-align: start;
+  padding: 0 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  height: 2.2rem;
+  font-size: 1.2rem;
+  color: blue;
+  letter-spacing: 1px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  caret-color: blue;
+  text-transform: capitalize;
+  width: 95%;
+  margin: 0 auto;
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+@media (max-width: 575px) {
+  .form input {
+    width: 80%;
+  }
+}
+
+.form input:hover, .form input:focus {
+  border: 0;
+  outline: 5px solid var(--clr-outline);
+}
+
+.form button {
+  margin: 1.3rem auto;
+  border: 0;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  background-color: #48aeea;
+  color: var(--main-color-text);
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  display: block;
+}
+
+.form button:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  letter-spacing: 2px;
+  background-color: #1991d7;
+}
+/*# sourceMappingURL=Input.module.css.map */
